@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do list</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>To-Do List</h1>
+    </header>
+
+    <hr />
+
+    <main>
+      <section class="container">
+        <div class="todos">
+          <section class="todos-form">
+            <div class="todos-form_form">
+              <input
+                type="text"
+                placeholder="Add a new Task ..."
+                id="inputField"
+                oninput="disabledButton()"
+              />
+            </div>
+            <div class="todos-form_submit">
+              <button
+                type="submit"
+                class="btn"
+                disabled
+                id="addButton"
+                onclick="addTodo()"
+              >
+                Add
+              </button>
+            </div>
+          </section>
+
+          <section class="todos-list" id="todos-list">
+            <!-- To-Do items will be rendered here -->
+          </section>
+        </div>
+      </section>
+    </main>
+    <div id="notification" class="notification"></div>
+
+    <footer>
+      <p>All Rights Reserved © 2024 | Designed by Misk Ashour 😎👌</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
